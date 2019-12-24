@@ -9,10 +9,15 @@ SO far really I've got is that hurricanes are really darn expensive, occur frequ
 
 ## The Pitch
 
-Welcome to S.H.I.E.L.D. B.A.S.H. (Background Analytics, S.H.I.E.L.D. Headquarters). Your first assignment will be to a team that is working to determine other possible occupations for the superhumans in our program. Your specific task is to see if a FEMA contract would be tenable.
+Welcome to S.H.I.E.L.D. B.A.S.H. (Background Analytics, S.H.I.E.L.D. Headquarters). You have been assigned to a team that is working to determine other possible occupations for the superhumans in our program. Your specific task is to see if a FEMA contract would be tenable.
 
-Using recent FEMA Disaster Declarations and Public Assistance Application information, identify any disasters that are likely targets for superhuman intervention. Propose
-a response team from our database of known friendly superhumans appropriate in size and scale.
+Using recent FEMA Disaster Declarations and Public Assistance Application information, identify disaster types that are likely targets for superhuman intervention. This could be prevention, mitigation, or particpation in cleanup/repair. 
+
+Propose a response team from our database of known friendly superhumans appropriate in size and scale.
+
+The set of superhumans you will be provided has already been screened to determine that they are sufficiently powered to handle themselves in disaster situations. 
+
+Transportation is not an issue and should be left out of this analysis. 
 
 ## The Data
 The data sources I am using can be found here:
@@ -23,9 +28,8 @@ The data sources I am using can be found here:
 
 [Hero Dataset](https://www.kaggle.com/claudiodavi/superhero-set#super_hero_powers.csv)
 
-Quality issues:
-The superhumans Dataset could be more complete. Specifically I would like to have a more precise base location to aid in transport. Further, relative strengths will need to be determined. I cannot send a pyrokinetic out to deal with a forest fire in CA if he can only handle flames the size of his hands.
-
+Supplemental information:
+[Explanation of FEMA terms](https://www.fema.gov/pdf/government/grant/pa/fema323_app_handbk.pdf)
 ## Approach to the Problem
 First, I'm working to see if there are some kinds of disasters that might be good subjects for hero intervention. Since the prompt specifies recent, I am restricting my search to after 2000.
 Within disasters I am looking up:
