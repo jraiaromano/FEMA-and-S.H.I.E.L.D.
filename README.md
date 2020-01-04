@@ -45,6 +45,10 @@ Hurricanes are a low-hanging fruit here, honestly. They (or their attendant dama
 The next step is analyzing heroes.
 
 I propose as an end product a simple dashboard from which an emergent disaster can be selected that will:
- - outline likely damage categories based on the kind of disaster
- - anticipate likely costs that mitigation could lesson
- - suggest superhuman response team complete with information about each team member.
+ - outline average damage costs based on the type of disaster
+ - benchmark goals for mitigation
+ - suggest superhuman response team tailored to that specific disaster type, along with a comprehensive list of generally helpeful heroes.
+
+ The link to my tableu presentation of this can be found [here](https://public.tableau.com/profile/julia5722#!/vizhome/CapstonePresentation_15781034462690/Story1?publish=yes)
+The link to my PowerBI Dashboard can be found [here](https://app.powerbi.com/groups/me/reports/cb54ee4f-7600-493d-8bdb-9c891648cfa2/ReportSection6aa850ea400518a819d0)
+
