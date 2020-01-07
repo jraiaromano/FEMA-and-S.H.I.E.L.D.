@@ -5,19 +5,19 @@
 An analysis of FEMA disaster data through the lens of a hypothetical response from superhumans from the MCU and Marvel Comics.
 
 ## Takeaways
-SO far really I've got is that hurricanes are really darn expensive, occur frequently, and are a general giant PITA. I plan to do a little more looking into these to see what response over time has looked like; I know generally that there are building codes that have been implemented to help mitigate the strength of winds and such. This might give me a direction to look for effective hero use.
+I loved having the opportunity to plan this whole thing myself. I dictated the question, chose the tools, mapped my approach, and designed my own end product. There is nothing that can teach you what you are capable of like a Capstone.   
 
 ## The Pitch
 
-Welcome to S.H.I.E.L.D. B.A.S.H. (Background Analytics, S.H.I.E.L.D. Headquarters). You have been assigned to a team that is working to determine other possible occupations for the superhumans in our program. Your specific task is to see if a FEMA contract would be tenable.
+Welcome to S.H.I.E.L.D. B.A.S.H. (Background Analytics, S.H.I.E.L.D. Headquarters). You have been assigned to a team that is working to determine possible peacetime activities for the superhumans in the Avengers Initiative. Your specific task is to see if a FEMA collaboration would be tenable.
 
-Using recent FEMA Disaster Declarations and Public Assistance Application information, identify disaster types that are likely targets for superhuman intervention. This could be prevention, mitigation, or particpation in cleanup/repair. 
+Using recent FEMA Disaster Declarations and Public Assistance Application data, identify disaster types that are likely targets for superhuman intervention. This could entail prevention, mitigation, or participation in cleanup/repair.
 
 Propose a response team from our database of known friendly superhumans appropriate in size and scale.
 
-The set of superhumans you will be provided has already been screened to determine that they are sufficiently powered to handle themselves in disaster situations. 
+The set of superhumans you will be provided has already been screened to determine that they are sufficiently powered to handle themselves in disaster situations.
 
-Transportation is not an issue and should be left out of this analysis. 
+Transportation is not an issue and should be left out of this analysis.
 
 ## The Data
 The data sources I am using can be found here:
@@ -29,26 +29,37 @@ The data sources I am using can be found here:
 [Hero Dataset](https://www.kaggle.com/claudiodavi/superhero-set#super_hero_powers.csv)
 
 Supplemental information:
+
 [Explanation of FEMA terms](https://www.fema.gov/pdf/government/grant/pa/fema323_app_handbk.pdf)
+
+[Explanation of Disaster Types](https://www.disasterassistance.gov/information/disaster-types/overview)
+
 ## Approach to the Problem
 First, I'm working to see if there are some kinds of disasters that might be good subjects for hero intervention. Since the prompt specifies recent, I am restricting my search to after 2000.
-Within disasters I am looking up:
- - costly disasters
- - frequently/regularly occurring/predictable disasters
- - all of the above
-Then to try and get a direction for what sort of powers might be useful, I am also looking at the sort of damage is done, using the damageCategory column from the Public Assistance Projects dataset to see:
- - most expensive damage categories
- - most commonly/frequently occurring damage categories
+Specifically, I want to see:
+ - what affects the costs of disasters so I know what type of assistance would be of the most use. For example, would FEMA benefit more from mitigation or cleanup assistance?
+ - if I can identify specific disaster types to target for max impact, or would they benefit more from broad-spectrum assistance?
 
-Hurricanes are a low-hanging fruit here, honestly. They (or their attendant damage) are in the top quartile of all these lists, followed by severe storms. Lots of weather-related disasters.
+![image](https://user-images.githubusercontent.com/52726447/71870382-5c232680-30db-11ea-9b07-42e9c0d7e141.png)
 
-The next step is analyzing heroes.
+ In answer to the above, it appears that the only thing that really affects the cost of disasters is the type of disaster: specifically, hurricanes, fire, and severe ice storms.
+ Now that I have targets, I want to know if they are worth it. Are they
+  - frequent enough to be worth even forming a team?
+  - are they predictable such that we can prevent them from even happening, or do we need to focus more on mitigation?
 
-I propose as an end product a simple dashboard from which an emergent disaster can be selected that will:
- - outline average damage costs based on the type of disaster
- - benchmark goals for mitigation
- - suggest superhuman response team tailored to that specific disaster type, along with a comprehensive list of generally helpeful heroes.
+As it turns out, according to the data, all three are regularly seasonal occurrances and tend to affect in the same areas. It should be easy to form teams to combat these disasters. 
 
- The link to my tableu presentation of this can be found [here](https://public.tableau.com/profile/julia5722#!/vizhome/CapstonePresentation_15781034462690/Story1?publish=yes)
+The next step is analyzing heroes. After spending some time researching the kind of damage these specific disasters cause, I was able to identify several powers that will come in handy when attempting to prevent them. I complied a list of all the superhumans who possess these abilities, and merged all of this together.
+
+
+As an end product, I created a simple dashboard that:
+ - allows selection of an emergent target disaster from a list.
+ - displays average damage costs based on the type of disaster
+ - sets benchmark financial goals for mitigation
+ - composes superhuman response team tailored to that specific disaster type
+ - provides basic data on the select Superhumans and their Powers.
+![image](https://user-images.githubusercontent.com/52726447/71870328-2716d400-30db-11ea-88f6-6388aa41081c.png)
+
+ The link to my Tableau presentation can be found [here](https://public.tableau.com/profile/julia5722#!/vizhome/CapstonePresentation_15781034462690/Story1?publish=yes)
+
 The link to my PowerBI Dashboard can be found [here](https://app.powerbi.com/groups/me/reports/cb54ee4f-7600-493d-8bdb-9c891648cfa2/ReportSection6aa850ea400518a819d0)
-
