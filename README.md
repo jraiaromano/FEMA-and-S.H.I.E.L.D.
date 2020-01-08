@@ -20,12 +20,12 @@ The set of superhumans you will be provided has already been screened to determi
 Transportation is not an issue and should be left out of this analysis.
 
 ## The Data
-So I really wanted to do my basic transformations in Python (which was very simple) and then the bulk of my EDA in PostgresSQL. SQL turned out to be a great tool for the aggregations but I had 2 major issues: 
+So I really wanted to do my basic transformations in Python (which was very simple) and then the bulk of my EDA in PostgresSQL. SQL turned out to be a great tool for the aggregations but I had 2 major issues:
 1. Entering tables with many (many many) columns manually is time consuming (in particular, the second superhero dataset had 168 columns).
-2. I had a serious data aggregation problem (Disaster cost was duplicating by the number of times that Disaster_ID appeared in the dataset.) I solved that with a nifty little CTE that calculated that number outside of my join and was able to finally get accurate cost numbers, but it was a bit touch-and-go for a while there. 
+2. I had a serious data aggregation problem (Disaster cost was duplicating by the number of times that Disaster_ID appeared in the dataset.) I solved that with a nifty little CTE that calculated that number outside of my join and was able to finally get accurate cost numbers, but it was a bit touch-and-go for a while there.
 ![image](https://user-images.githubusercontent.com/52726447/72005693-d2c33f80-3213-11ea-9a50-7a32384c2b87.png)
 
-The other major issue I had was the format of the hero powers dataset... 168 of boolean columns was very difficult to visualize. I eneded up manually creating several tables in Excel to get something that was usable. 
+The other major issue I had was the format of the hero powers dataset... 168 of boolean columns was very difficult to visualize. I ended up manually creating several tables in Excel to get something that was usable.
 
 The data sources I am using can be found here:
 
@@ -54,7 +54,7 @@ Specifically, I want to see:
   - frequent enough to be worth even forming a team?
   - are they predictable such that we can prevent them from even happening, or do we need to focus more on mitigation?
 
-As it turns out, according to the data, all three are regularly seasonal occurrances and tend to affect in the same areas. It should be easy to form teams to combat these disasters. 
+As it turns out, according to the data, all three are regularly seasonal occurrences and tend to affect in the same areas. It should be easy to form teams to combat these disasters.
 
 The next step is analyzing heroes. After spending some time researching the kind of damage these specific disasters cause, I was able to identify several powers that will come in handy when attempting to prevent them. I complied a list of all the superhumans who possess these abilities, and merged all of this together.
 
@@ -67,10 +67,10 @@ As an end product, I created a simple dashboard that:
  - provides basic data on the select Superhumans and their Powers.
 ![image](https://user-images.githubusercontent.com/52726447/71870328-2716d400-30db-11ea-88f6-6388aa41081c.png)
 
-As a future development goal for the dashboard, I would love to add more disasters and more heroes. Eventually, I'd like to have a seatchable database of heroes and powers.
+As a future development goal for the dashboard, I would love to add more disasters and more heroes. Eventually, I'd like to have a searchable database of heroes and powers.
 
-Also, creating a program that will predict when compatable disasters might crop up concurrently would be amazing: We could then send teams that could use flood waters, for example, to put out fires with the use of portals. This might be a job for the data scientists but I think it could create even more efficiency and is worthy of pursuit.
+Also, creating a program that will predict when compatible disasters might crop up concurrently would be amazing: We could then send teams that could use flood waters, for example, to put out fires with the use of portals. This might be a job for the data scientists but I think it could create even more efficiency and is worthy of pursuit.
 
- The link to my Tableau presentation can be found [here](https://public.tableau.com/profile/julia5722#!/vizhome/FEMAS_H_I_E_L_D_PresentationwithText/PresentationwithText?publish=yes), or pleaes download the PDF version in this repo.
+ The link to my Tableau presentation can be found [here](https://public.tableau.com/profile/julia5722#!/vizhome/FEMAS_H_I_E_L_D_PresentationwithText/PresentationwithText?publish=yes), or please download the PDF version in this repo.
 
 The link to my PowerBI Dashboard can be found [here](https://app.powerbi.com/view?r=eyJrIjoiZDQzNWVjZDctNTBiNy00ZjQ2LTgyZDctNDc1ZTRjYmM5ZjQwIiwidCI6IjEwMWRhNTg3LTE4NDMtNGY1Mi04YjhhLTE3YjA2OWM2NmQzMyIsImMiOjJ9).
